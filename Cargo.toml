@@ -1,0 +1,29 @@
+[package]
+name = "speed-monitor"
+version = "0.1.0"
+authors = ["htynkn <htynkn@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+[dependencies]
+diesel = { version = "1.4.7", features = ["sqlite"] }
+dotenv = "0.15.0"
+human-panic = "1.0"
+log = "0.4"
+log4rs = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+speedtest-rs = { git = "https://github.com/htynkn/speedtest-rs", rev = "8d25e6f" }
+libsqlite3-sys = { version = "*", features = ["bundled"] }
+diesel_migrations = "1.4.0"
+actix-web = "3.3.2"
+actix-files = "0.5.0"
+actix-rt = "2.2.0"
+actix-web-static-files = "3.0"
+cronjob = "0.3.17"
+actix-cors = "0.5.4"
+
+[build-dependencies]
+actix-web-static-files = "3.0"
+
+
