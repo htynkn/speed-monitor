@@ -11,7 +11,7 @@
 SCRIPT=/usr/local/speedmonitor/speed-monitor
 RUNAS=root
 
-PIDFILE=DATABASE_URL=data.db /var/run/sppedmonitor.pid
+PIDFILE=/var/run/sppedmonitor.pid
 LOGFILE=/var/log/sppedmonitor.log
 PIDNAME=sppedmonitor
 
